@@ -30,7 +30,7 @@ The figure `peaks_throughs.png` illustrates how the peaks and troughs are calcul
 You can install the necessary packages using:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 ## Contact
 
