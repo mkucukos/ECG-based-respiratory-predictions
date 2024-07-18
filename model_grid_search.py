@@ -51,7 +51,7 @@ device_lib.list_local_devices()
 
 
 MODEL_NAME = '3_inputs_model'
-RUN = 'run6_' + MODEL_NAME+ '/'
+RUN = 'run7_' + MODEL_NAME+ '/'
 
 CURRENT_DIR = os.getcwd()
 DATA_DIR = CURRENT_DIR + '/dataset/'
@@ -73,9 +73,13 @@ print(OUTPUT_DIR)
 
 
 data_df = pd.read_pickle(DATA_DIR + 'fantasia_dataset_preprocessing.plk')
+print("Before filter:", data_df.shape)
 data_df
 
 
+data_df = data_df[(data_df['snr'] >= 4) & (data_df['Breath_rate_variability'] <= 1700)]
+print("After filter:", data_df.shape)
+data_df
 # In[ ]:
 
 
