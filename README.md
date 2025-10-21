@@ -47,7 +47,7 @@ The figure `samples_example.png` showed the samples that use for training.
 
 You can install the necessary packages using:
 
-## requirements
+## Requirements
 pip install -r requirements.txt
 
 ## Contact
