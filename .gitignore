@@ -1,3 +1,42 @@
-
+# Jupyter
 .ipynb_checkpoints/
+
+# Dataset (download separately from Kaggle)
 dataset/*
+
+# Generated output artifacts
+output/**/*.png
+output/**/*.pkl
+output/**/*.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Pickle / data files
+*.pkl
+*.plk
+*.npy
+*.npz
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

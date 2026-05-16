@@ -284,7 +284,7 @@ print(f"X_test_feature shape: {X_test_feature.shape}")
 def compute_freq_domain(X, SAMPLE_RATE = 250, N_SAMPLES = 30*250):
     X_freq = []
     for i in range(X.shape[0]):
-        data = X_train[i]
+        data = X[i]
         frequency_domain = np.fft.fft(data)
         #frequencies = np.fft.fftfreq(N_SAMPLES, 1/SAMPLE_RATE)
         X_freq.append(np.abs(frequency_domain))
